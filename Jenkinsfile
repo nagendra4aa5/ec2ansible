@@ -12,8 +12,7 @@ pipeline {
                 sh 'terraform init'
                 sh 'terraform fmt'
                 sh 'terraform validate'
-                sh 'pwd'
-                sh 'terraform apply --auto-approve'
+                sh 'terraform apply "-lock=false" --auto-approve'
             }
         }
     }
