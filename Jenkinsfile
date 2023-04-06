@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage ('vcs') {
         steps {
-            git url :'https://github.com/nagendra4aa5/terraform.git'
+            git url :'https://github.com/nagendra4aa5/ec2ansible.git'
             branch : 'main' 
 
             
